@@ -1,5 +1,9 @@
 server:
   port: 8085
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://ehs:ehs123@cluster0.pluxt.mongodb.net/db_mscustomers?retryWrites=true&w=majority
 eureka:
   client:
     service-url:
