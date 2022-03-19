@@ -27,4 +27,8 @@ spring:
           uri: lb://credits-customers
           predicates: 
             - Path=/credit/**
+        - id: ms-products
+          uri: lb://ms-products
+          predicates: 
+            - Path=/product/**
         
