@@ -10,3 +10,16 @@ spring:
       discovery:
         locator:
           enabled: true
+      routes:
+        - id: customers-company
+          uri: lb://customers-company
+          predicate: 
+            - Path=/customerc/**
+        - id: customers-person
+          uri: lb://customers-person
+          predicate: 
+            - Path=/customerp/**
+        - id: account-customers
+          uri: lb://account-customers
+          predicate: 
+            - Path=/account/**
