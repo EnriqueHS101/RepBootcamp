@@ -13,13 +13,18 @@ spring:
       routes:
         - id: customers-company
           uri: lb://customers-company
-          predicate: 
+          predicates: 
             - Path=/customerc/**
         - id: customers-person
           uri: lb://customers-person
-          predicate: 
+          predicates: 
             - Path=/customerp/**
         - id: account-customers
           uri: lb://account-customers
-          predicate: 
+          predicates: 
             - Path=/account/**
+        - id: credits-customers
+          uri: lb://credits-customers
+          predicates: 
+            - Path=/credit/**
+        
