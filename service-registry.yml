@@ -3,6 +3,7 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
+    instance-id: pruebita
     hostname: localhost
   client:
     registerWithEureka:   false
