@@ -31,4 +31,10 @@ spring:
           uri: lb://ms-products
           predicates: 
             - Path=/product/**
+        - id: account-transactions
+          uri: lb://account-transactions
+          predicates: 
+            - Path=/atransaction/** , /operation/**
+
+            
         
