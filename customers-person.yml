@@ -29,3 +29,11 @@ resilience4j.circuitbreaker:
             waitDurationInOpenState: 5s
             failureRateThreshold: 50
             eventConsumerBufferSize: 10
+resilience4j.timelimiter:
+    instances:
+        accountCP:
+            timeoutDuration: 5s
+            cancelRunningFuture: true
+        creditCP:
+            timeoutDuration: 2s
+            cancelRunningFuture: false
